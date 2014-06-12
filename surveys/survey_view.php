@@ -78,12 +78,13 @@ if($myResult->isValid)
 		echo "Questions and Possible Answers:<br />";
 		$mySurvey->showQuestions();
 		//responseList($myID);
+		
 		echo 'No results so far';
 	}else{
 		echo "Sorry, no such survey!";	
 	}	
 }
-
+echo '<br /><a href="survey_take.php?SurveyID=' . $myID . '">Take Survey!</a>';
 get_footer(); #defaults to theme footer or footer_inc.php
 
 function responseList($myID)
